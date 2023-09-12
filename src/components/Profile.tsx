@@ -3,7 +3,7 @@ import InnerLayout from './UI/InnerLayout'
 import ProfileAnimation from './ProfileAnimation'
 import { DocIcon } from './utils/Icons'
 
-const Profile = () => {
+const Profile = ({}) => {
   return (
     <InnerLayout title="프로필">
       <div className="relative py-1 my-10 items-center flex">
@@ -30,7 +30,7 @@ const Profile = () => {
           </p>
           <p className="break-words leading-relaxed mb-5">
             또한 6개월 동안 삼성 에스원에서 프리랜서 개발자로 일하며 PM과 개발
-            일정을 조율하고 회의에 참여하여 아이디어를 내는 등
+            일정을 조율하고 회의에 참여하여 아이디어를 내는 등 &nbsp;
             <b className="text-primary">
               웹 파트 리더로써 팀을 이끌어가는 훈련
             </b>

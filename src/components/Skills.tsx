@@ -1,7 +1,8 @@
 import React from 'react'
 import InnerLayout from './UI/InnerLayout'
 import { motion } from 'framer-motion'
-import { skillStacks } from '@/datas'
+import { skillStacks } from '@/datas/index'
+import { skillComponent } from '../../global'
 
 const Skill: React.FC<{ skill: skillComponent }> = ({ skill }) => {
   const viewData = { x: `${skill.x}vw`, y: `${skill.y}vw` }

@@ -1,5 +1,4 @@
 import Career from '@/components/Career'
-import Contact from '@/components/Contact'
 import Education from '@/components/Education'
 import Profile from '@/components/Profile'
 import Project from '@/components/Project'
@@ -23,7 +22,6 @@ export default function Home() {
       <Career />
       <Works />
       <Education />
-      <Contact />
     </>
   )
 }

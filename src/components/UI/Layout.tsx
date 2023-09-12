@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import Aside from './Aside'
+import Contact from './Contact'
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isNav, setIsNav] = useState(false)
@@ -15,6 +16,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <Aside isNav={isNav} />
       <Header onNavButton={navChangeHandler} />
       <main className="grow py-4 w-inner"> {children}</main>
+      <Contact />
       <Footer />
     </div>
   )
