@@ -22,7 +22,7 @@
 
 @layer utilities {
   .w-inner {
-    @apply max-w-[1920px] w-full m-auto px-32;
+    @apply max-w-[1920px] w-full m-auto px-32 xl:px-16 md:px-2;
   }
 
   .li-ani:hover span:nth-child(1) {

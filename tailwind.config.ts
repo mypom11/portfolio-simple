@@ -13,6 +13,25 @@ const config: Config = {
     fontFamily: {
       sans: ['var(--roboto)', ...fontFamily.sans],
     },
+    screens: {
+      '2xl': { max: '1535px' },
+      // => @media (max-width: 1535px) { ... }
+
+      xl: { max: '1279px' },
+      // => @media (max-width: 1279px) { ... }
+
+      lg: { max: '1023px' },
+      // => @media (max-width: 1023px) { ... }
+
+      md: { max: '767px' },
+      // => @media (max-width: 767px) { ... }
+
+      sm: { max: '639px' },
+      // => @media (max-width: 639px) { ... }
+
+      xs: { max: '479px' },
+      // => @media (max-width: 479px) { ... }
+    },
     colors: {
       dark: '#1b1b1b',
       light: '#f5f5f5',
@@ -24,7 +43,7 @@ const config: Config = {
       circularLight:
         'repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #fff 5px, #fff 100px)',
       circularDark:
-        'repeating-radial-gradient(rgba(255,255,255,0.5) 2px, #1b1b1b 8px, #1b1b1b 100px)',
+        'repeating-radial-gradient(rgba(255,255,255,0.5) 2px, #121212 8px, #121212 100px)',
     },
     extend: {
       keyframes: {

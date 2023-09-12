@@ -1,28 +1,31 @@
+import { UiContext } from '@/store/ui-context'
+import { useContext, useEffect, useState } from 'react'
+
 const nav = [
   {
     name: '프로필',
-    id: 1,
+    id: 0,
   },
   {
     name: '기술 스택',
-    id: 2,
+    id: 1,
   },
   {
     name: '개인 프로젝트',
-    id: 3,
+    id: 2,
   },
   {
     name: '경력 사항',
-    id: 4,
+    id: 3,
   },
   {
     name: '회사 프로젝트',
-    id: 5,
+    id: 4,
   },
 
   {
     name: '교육 및 활동',
-    id: 6,
+    id: 5,
   },
 ]
 
@@ -32,12 +35,33 @@ interface liComponent {
 }
 
 const AnimationLi = ({ name, id }: liComponent) => {
+  const [isView, setIsView] = useState(false)
+  const uiCtx = useContext(UiContext)
+
+  useEffect(() => {
+    if (uiCtx.currentView === id) {
+      setIsView(true)
+    } else {
+      setIsView(false)
+    }
+    return
+  }, [uiCtx.currentView, id])
+
+  const navMoveHandler = () => {
+    uiCtx.moveTo(id)
+  }
+
   return (
-    <li className="cursor-pointer li-ani text-xl">
+    <li
+      className="cursor-pointer li-ani text-xl md:text-center"
+      onClick={navMoveHandler}
+    >
       {name.split('').map((word, index) => (
         <span
-          key={`${id}_${index}`}
-          className={`inline-block ${word === ' ' ? 'pl-1' : ''}`}
+          key={index}
+          className={`inline-block ${word === ' ' ? 'pl-1' : ''} ${
+            isView ? 'text-primary font-bold dark:text-primaryDark' : ''
+          }`}
         >
           {word}
         </span>
@@ -49,7 +73,7 @@ const AnimationLi = ({ name, id }: liComponent) => {
 const Aside: React.FC<{ isNav: boolean }> = ({ isNav }) => {
   return (
     <aside
-      className={`fixed w-1/4 right-0 top-14 z-40 bg-light duration-300 ${
+      className={`fixed w-1/4 right-0 top-14 z-40 bg-light duration-300 dark:bg-slate-800 lg:w-1/3 md:w-full ${
         isNav ? 'translate-x-0' : 'translate-x-full'
       }`}
       style={{ height: 'calc(100vh - 50px)' }}

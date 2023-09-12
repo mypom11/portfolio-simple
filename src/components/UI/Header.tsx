@@ -13,7 +13,7 @@ const Header = ({ className, onNavButton }: headerComponet) => {
   }
 
   return (
-    <header className="sticky top-0 bg-light z-50 shadow-md ">
+    <header className="sticky top-0 bg-light z-50 shadow-md dark:bg-slate-900 ">
       <div
         className={`w-inner flex justify-between bg-slate-60 items-center py-4  ${className}`}
       >

@@ -12,8 +12,11 @@ const AccordionLi: React.FC<{ item: worksDataModel }> = ({ item }) => {
   }
 
   return (
-    <li className="px-16 relative">
-      <span className="absolute left-6 cursor-pointer" onClick={toggleHandler}>
+    <li className="px-16 relative md:px-4">
+      <span
+        className="absolute left-6 cursor-pointer md:left-auto md:right-4"
+        onClick={toggleHandler}
+      >
         {isOpen ? <BarsUpIcon /> : <BarsDownIcon />}
       </span>
       <div
@@ -23,41 +26,41 @@ const AccordionLi: React.FC<{ item: worksDataModel }> = ({ item }) => {
       >
         <div>
           <div className="flex justify-between items-center mb-2">
-            <h1 className="text-2xl font-bold">{item.name}</h1>
+            <h1 className="text-2xl font-bold md:text-lg">{item.name}</h1>
           </div>
         </div>
         <p className="mb-2 font-semibold">
           {item.company}{' '}
           <span className="italic text-sm text-dark/50">{item.period}</span>
         </p>
-        <ul className="flex gap-2 flex-wrap mb-4">
+        <ul className="flex gap-2 flex-wrap mb-4 md:mb-2">
           {item.skill.map((skill, i) => (
             <li
               key={i}
-              className="px-4 text-light font-medium "
+              className="px-4 text-light font-medium md:text-sm md:px-2"
               style={{ backgroundColor: `#${colorPallete[skill]}` }}
             >
               {skill}
             </li>
           ))}
         </ul>
-        <h3 className="text-xl font-semibold mb-2">{item.formation}</h3>
-        <p className="">{item.desc}</p>
+        <h3 className="text-xl font-semibold mb-2 md:text-base">
+          {item.formation}
+        </h3>
+        <p className="md:text-sm">{item.desc}</p>
       </div>
-      <hr className="mt-8" />
+      <hr className="mt-8 md:mt-4" />
     </li>
   )
 }
 
 const Works = () => {
   return (
-    <InnerLayout title="회사 프로젝트">
-      <ul className="flex-col flex gap-12">
-        {worksData.map((item, index) => (
-          <AccordionLi item={item} key={index} />
-        ))}
-      </ul>
-    </InnerLayout>
+    <ul className="flex-col flex gap-12">
+      {worksData.map((item, index) => (
+        <AccordionLi item={item} key={index} />
+      ))}
+    </ul>
   )
 }
 
