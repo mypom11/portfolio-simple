@@ -24,7 +24,7 @@ const Project: React.FC<{ project: projectComponent }> = ({ project }) => {
           alt={project.name}
           className="w-[50vw] xl:w-full"
           priority
-          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <div className="w-1/2 p-8 xl:w-full md:p-4 md:text-center">

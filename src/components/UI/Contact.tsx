@@ -18,7 +18,7 @@ const Contact = () => {
         <ul className="flex-col flex gap-4 md:gap-1">
           <li>
             <a
-              href=""
+              href="tel:010-8787-4700"
               className="text-lg font-bold py-2 px-10 bg-white rounded-lg block dark:bg-dark dark:text-light md:px-5"
             >
               <span>연락처</span>
@@ -27,7 +27,8 @@ const Contact = () => {
           </li>
           <li>
             <a
-              href=""
+              href="mailto:mypom11@gmail.com"
+              target="_top"
               className="text-lg font-bold py-2 px-10 bg-white rounded-lg block dark:bg-dark dark:text-light md:px-5"
             >
               <span>이메일</span>

@@ -10,17 +10,17 @@ const Footer = ({ className }: defaultComponent) => {
       <h4> {new Date().getFullYear()} &copy; All Right Reserved.</h4>
       <ul className="flex text-2xl gap-4">
         <li className="flex">
-          <a href="">
+          <a href="tel:010-8787-4700">
             <MobileIcon />
           </a>
         </li>
         <li className="flex">
-          <a href="">
+          <a href="mailto:mypom11@gmail.com" target="_top">
             <EmailIcon />
           </a>
         </li>
         <li className="flex">
-          <a href="">
+          <a href="http://github.com/mypom11" target="_blank">
             <GithubIcon />
           </a>
         </li>

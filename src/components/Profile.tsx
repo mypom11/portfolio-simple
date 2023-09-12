@@ -47,12 +47,16 @@ const Profile = ({}) => {
               않으며 도전하는 것을 즐깁니다.
             </b>
           </p>
-          <button className=" flex gap-2 items py-4 px-12 rounded-md border-dark border-[1px] border-solid text-dark font-medium hover:bg-dark hover:text-light dark:text-light dark:border-light dark:hover:text-dark dark:hover:bg-light md:w-full md:justify-center">
+          <a
+            href="/resume.pdf"
+            download="민정기 이력서.pdf"
+            className=" flex gap-2 items py-4 px-12 rounded-md border-dark border-[1px] border-solid text-dark font-medium hover:bg-dark hover:text-light dark:text-light dark:border-light dark:hover:text-dark dark:hover:bg-light md:w-full md:justify-center"
+          >
             <span>
               <DocIcon />
             </span>
             이력서 보기
-          </button>
+          </a>
         </div>
         <div>
           <ProfileAnimation />
