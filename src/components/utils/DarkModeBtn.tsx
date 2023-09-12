@@ -1,7 +1,9 @@
 import { useTheme } from 'next-themes'
 import React, { useEffect, useState } from 'react'
 import { MoonIcon, SunIcon } from '@/components/utils/AnimateIcon'
-
+interface defaultComponent {
+  className?: string
+}
 const DarkModeBtn = ({ className }: defaultComponent) => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
