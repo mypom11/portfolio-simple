@@ -5,7 +5,7 @@ import { colorPallete, worksData } from '@/datas'
 import { worksDataModel } from '../../global'
 
 const AccordionLi: React.FC<{ item: worksDataModel }> = ({ item }) => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleHandler = () => {
     setIsOpen((prevState) => !prevState)
