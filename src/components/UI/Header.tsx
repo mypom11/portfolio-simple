@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Hamburger from '../utils/Hamburger'
 import DarkModeBtn from '../utils/DarkModeBtn'
+import { UiContext } from '@/store/ui-context'
 
 interface headerComponet {
   className?: string
-  onNavButton: () => void
 }
 
-const Header = ({ className, onNavButton }: headerComponet) => {
+const Header = ({ className }: headerComponet) => {
+  const uiCtx = useContext(UiContext)
   const clickHandler = () => {
-    onNavButton()
+    uiCtx.setNav()
   }
 
   return (

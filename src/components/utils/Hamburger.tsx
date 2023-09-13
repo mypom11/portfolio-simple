@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
+import { UiContext } from '@/store/ui-context'
+import React, { useContext, useState } from 'react'
 
 interface hamburgerModel {
   onClick: () => void
 }
 
 const Hamburger = ({ onClick }: hamburgerModel) => {
-  const [isNavOpen, setIsNavOpen] = useState(false)
+  const uiCtx = useContext(UiContext)
 
   const clickHandler = () => {
-    setIsNavOpen((prevState) => !prevState)
-    onClick()
+    uiCtx.setNav()
   }
 
   return (
@@ -19,17 +19,17 @@ const Hamburger = ({ onClick }: hamburgerModel) => {
     >
       <span
         className={`block h-0.5 w-6 rounded-sm bg-dark transition-all duration-300 ease-out dark:bg-light  ${
-          isNavOpen ? 'translate-y-1 rotate-45' : '-translate-y-0.5'
+          uiCtx.isNav ? 'translate-y-1 rotate-45' : '-translate-y-0.5'
         } `}
       ></span>
       <span
         className={`my-0.5 block h-0.5 w-6 rounded-sm bg-dark transition-all duration-300 ease-out dark:bg-light ${
-          isNavOpen ? 'opacity-0' : 'opacity-100'
+          uiCtx.isNav ? 'opacity-0' : 'opacity-100'
         } `}
       ></span>
       <span
         className={`block h-0.5 w-6 rounded-sm bg-dark transition-all duration-300 ease-out dark:bg-light  ${
-          isNavOpen ? '-translate-y-1 -rotate-45' : 'translate-y-0.5'
+          uiCtx.isNav ? '-translate-y-1 -rotate-45' : 'translate-y-0.5'
         } `}
       ></span>
     </button>

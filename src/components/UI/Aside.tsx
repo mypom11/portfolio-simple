@@ -49,6 +49,7 @@ const AnimationLi = ({ name, id }: liComponent) => {
 
   const navMoveHandler = () => {
     uiCtx.moveTo(id)
+    uiCtx.setNav()
   }
 
   return (
@@ -70,11 +71,13 @@ const AnimationLi = ({ name, id }: liComponent) => {
   )
 }
 
-const Aside: React.FC<{ isNav: boolean }> = ({ isNav }) => {
+const Aside = () => {
+  const uiCtx = useContext(UiContext)
+
   return (
     <aside
       className={`fixed w-1/4 right-0 top-14 z-40 bg-light duration-300 dark:bg-slate-800 lg:w-1/3 md:w-full ${
-        isNav ? 'translate-x-0' : 'translate-x-full'
+        uiCtx.isNav ? 'translate-x-0' : 'translate-x-full'
       }`}
       style={{ height: 'calc(100vh - 50px)' }}
     >
