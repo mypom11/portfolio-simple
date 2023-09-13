@@ -41,7 +41,7 @@ const Career = () => {
           </h1>
         </div>
         <p className="italic mb-2 md:text-sm">
-          2022.09 ~ 2022.09
+          2021.09 ~ 2022.09
           <span className="ml-2 text-dark/50">(1년 1개월)</span>
         </p>
         <h3 className="text-xl font-semibold mb-2 md:text-base">

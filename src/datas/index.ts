@@ -138,7 +138,7 @@ export const projects = [
     desc: 'Nextjs 를 활용한 SSR 쇼핑몰 프로젝트 구현하였습니다. getStaticProps함수와 getStaticPaths함수를 통해 정적인 웹페이지를 구현하였으며 파이어베이스 리얼타임 데이터베이스와 Cloudinary 서비스를 이용하여 Vercel환경에서 이미지를 저장하도록 구현하였습니다. TailwindCss를 활용하여 반응형 웹으로 만들었으며 다크모드 또한 지원합니다. Redux Toolkit으로 Next환경에서 상태관리를 하였으며 장바구니 기능 역시 구현하였습니다.',
     git: 'https://github.com/mypom11/furnitureMarket',
     learn: null,
-    demo: 'https://furniture-market.vercel.app/',
+    demo: 'https://furniture.jkmin.store',
     img: projectImg1,
   },
   {

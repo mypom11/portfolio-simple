@@ -122,8 +122,9 @@ export default function Home() {
 
         <title>민정기 포트폴리오</title>
       </Head>
+
       <p className="italic text-right text-dark/30 dark:text-light/30">
-        Last updated: 2323.09.12
+        Last updated: 2023.09.12
       </p>
 
       {navData.map((nav, index) => (
