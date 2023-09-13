@@ -48,7 +48,7 @@ const Profile = ({}) => {
             </b>
           </p>
           <a
-            href="https://catnip-meteorite-b17.notion.site/dd5144fa0d8c4c058a5a3a3db1d4a460?pvs=4"
+            href="https://catnip-meteorite-b17.notion.site/3b1c360921284679a91fb0de62038f94"
             target="_blank"
             className=" flex gap-2 items py-4 px-12 rounded-md border-dark border-[1px] border-solid text-dark font-medium hover:bg-dark hover:text-light dark:text-light dark:border-light dark:hover:text-dark dark:hover:bg-light md:w-full md:justify-center"
           >
