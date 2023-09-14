@@ -150,15 +150,15 @@ export const projects = [
     demo: 'https://portfolio-40b9f.web.app/',
     img: projectImg2,
   },
-  {
-    name: 'Portfolio 사이트 클론 코딩',
-    skill: ['ReactJs', 'TypeScript', 'TailwindCss', 'Framer-motion', 'Vercel'],
-    desc: 'TailwindCSS 공부를 위해 외국인 강좌를 클론 코딩하였습니다. JS로 강의하는 것을 TS로 변경하며 작업하였으며 Framer-motion라이브러리를 활용한 여러가지 애니매이션 제작 방법을 습득하고 클론 코딩에서 그치는 것이 아니라 제 것으로 만들기 위해 공부하였습니다.',
-    git: 'https://github.com/mypom11/portfolio-clonecoding-next-framer-motion',
-    learn: null,
-    demo: 'https://portfolio-clonecoding-next-framer-motion.vercel.app/',
-    img: projectImg3,
-  },
+  // {
+  //   name: 'Portfolio 사이트 클론 코딩',
+  //   skill: ['ReactJs', 'TypeScript', 'TailwindCss', 'Framer-motion', 'Vercel'],
+  //   desc: 'TailwindCSS 공부를 위해 외국인 강좌를 클론 코딩하였습니다. JS로 강의하는 것을 TS로 변경하며 작업하였으며 Framer-motion라이브러리를 활용한 여러가지 애니매이션 제작 방법을 습득하고 클론 코딩에서 그치는 것이 아니라 제 것으로 만들기 위해 공부하였습니다.',
+  //   git: 'https://github.com/mypom11/portfolio-clonecoding-next-framer-motion',
+  //   learn: null,
+  //   demo: 'https://portfolio-clonecoding-next-framer-motion.vercel.app/',
+  //   img: projectImg3,
+  // },
 
   {
     name: '이상형 월드컵 사이트',
