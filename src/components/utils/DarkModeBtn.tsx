@@ -1,6 +1,6 @@
 import { useTheme } from 'next-themes'
 import React, { useEffect, useState } from 'react'
-import { MoonIcon, SunIcon } from '@/components/utils/AnimateIcon'
+import { MoonIcon, SunIcon } from '@/components/utils/Icons'
 interface defaultComponent {
   className?: string
 }
