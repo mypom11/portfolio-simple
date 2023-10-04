@@ -11,8 +11,12 @@ const Contact = () => {
   return (
     <div className="fixed right-20 bottom-10 md:right-5">
       <div
-        className={`absolute bottom-9 right-1/2 bg-primaryDark p-4 rounded-md shadow-xl text-dark origin-bottom-right duration-500 overflow-hidden dark:bg-primary md:right-0 md:p-1
-        ${contactIsOpen ? 'w-[340px] h-[240px] md:w-[300px]' : 'w-0 h-0'}
+        className={`absolute bottom-9 right-1/2 bg-primaryDark p-4 rounded-md shadow-xl text-dark origin-bottom-right duration-500 overflow-hidden dark:bg-primary md:p-1
+        ${
+          contactIsOpen
+            ? 'w-[340px] h-[280px] md:w-[300px] md:h-[240px]'
+            : 'w-0 h-0'
+        }
         `}
       >
         <ul className="flex-col flex gap-4 md:gap-1">
